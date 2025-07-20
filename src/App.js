@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import {Routing} from './Multi-Page_App/Routing';
+import { RoutingLink } from './User_Profile_Page/RoutingLink';
+import { ConditionState } from './Protected_Route/ConditionState';
+import { SimpleForm } from './Simple_Login_form/SimpleForm';
+import { CustomerDataForm} from './Contact_Form/userContactForm';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {/* <Routing/> */}
+     {/* <RoutingLink/> */}
+     {/* <ConditionState isLoggedIn={false}/> */}
+     {/* <SimpleForm/> */}
+     <CustomerDataForm/>
     </div>
   );
 }
